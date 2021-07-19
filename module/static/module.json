@@ -1,0 +1,20 @@
+{
+  "name": "dnd5e-tweaks",
+  "title": "DnD5e Tweaks",
+  "description": "Multi package of small togglable adjustments to DnD5e Game System.",
+  "author": "AspyMui",
+  "version": "0.0.1",
+  "minimumCoreVersion": "0.8.8",
+  "compatibleCoreVersion": "0.8.4",
+  "dependencies": [
+    {
+      "name": "dnd5e",
+      "type": "system"
+    }
+  ],
+  "esmodules": ["./main.js"],
+  "templates": [],
+  "url": "https://github.com/AspyMui/dnd5e-tweaks",
+  "manifest": "https://github.com/AspyMui/dnd5e-tweaks/releases/download/0.0.1/module.json",
+  "download": "https://github.com/AspyMui/dnd5e-tweaks/releases/download/0.0.1/module.zip"
+}
