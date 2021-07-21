@@ -1,4 +1,4 @@
-import { MODULE_ID } from '../constants.js';
+import { MODULE_ID, TEMPLATE_PATH } from '../constants.js';
 import { convertLabelIdToDisplay } from './util.js';
 
 export class DamageTypeListForm extends FormApplication {
@@ -16,7 +16,7 @@ export class DamageTypeListForm extends FormApplication {
     return mergeObject(super.defaultOptions, {
       classes: ['form'],
       popOut: true,
-      template: `modules/${MODULE_ID}/templates/damage_type_list.hbs`,
+      template: `${TEMPLATE_PATH}/damage_type_list.hbs`,
       id: DamageTypeListForm.FORM_ID,
       title: 'Damage Type List'
     });
