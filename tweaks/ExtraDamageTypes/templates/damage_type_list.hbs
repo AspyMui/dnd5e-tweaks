@@ -1,0 +1,27 @@
+<form class="flexcol">
+  <h3>Damage Types:</h3>
+  <div class="form-group">
+    <ul>
+      {{#each types}}
+      <li>
+        {{styleListLabels this}}
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+  <div class="form-group">
+    <label for="newType" style="display:block;">Add Damage Type</label>
+    <input type="text" name="newDamageType" placeholder="new damage type...">
+    <button name="add">Add</button>
+  </div>
+  <footer class="sheet-footer flexrow">
+    <button type="submit" name="submit">
+      <i class="fas fa-save"></i>
+      Save
+    </button>
+    <button name="reset">
+      <i class="fas fa-undo"></i>
+      Reset
+    </button>
+  </footer>
+</form>

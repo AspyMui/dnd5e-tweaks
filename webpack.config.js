@@ -3,8 +3,8 @@ const package = require('./package.json');
 const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
-  entry: './module/src/index.js',
+  mode: 'production',
+  entry: './tweaks/index.js',
   output: {
     filename: 'main.js',
     path: path.resolve(
@@ -16,7 +16,15 @@ module.exports = {
   },
   plugins: [
     new CopyPlugin({
-      patterns: [{ from: './module/static' }]
+      patterns: [
+        {
+          from: './tweaks/module.json'
+        },
+        {
+          from: './tweaks/**/*.hbs',
+          to: 'templates/[name][ext]'
+        }
+      ]
     })
   ]
 };
