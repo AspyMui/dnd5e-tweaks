@@ -23,6 +23,16 @@ module.exports = {
         {
           from: './tweaks/**/*.hbs',
           to: 'templates/[name][ext]'
+        },
+        {
+          from: './tweaks/**/*.jpg',
+          from: './tweaks/**/*.png',
+          from: './tweaks/**/*.svg',
+          to: 'assets/[name][ext]'
+        },
+        {
+          from: './tweaks/**/*.css',
+          to: 'styles/[name][ext]'
         }
       ]
     })

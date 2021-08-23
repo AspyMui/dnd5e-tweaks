@@ -1,0 +1,11 @@
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 2px #ff6400, inset 0 0 2px #ff6400;
+  }
+  50% {
+    box-shadow: 0 0 8px #ff6400, inset 0 0 8px #ff6400;
+  }
+  100% {
+    box-shadow: 0 0 2px #ff6400, inset 0 0 2px #ff6400;
+  }
+}

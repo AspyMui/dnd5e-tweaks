@@ -15,7 +15,7 @@ Hooks.once('ready', () => {
   });
 
   game.settings.registerMenu(MODULE_ID, DamageTypeListForm.FORM_ID, {
-    name: 'Config Type List',
+    name: 'Extra Damage Types',
     label: 'Open Type List',
     hint: 'Add extra damage types to DnD5e.',
     scope: 'world',
